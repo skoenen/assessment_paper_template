@@ -1,0 +1,64 @@
+\title{DEFINE Title in documents\_informations.tex}
+
+% Author(s)
+\author{
+    First Author Name \\
+    Department \\
+    School \\
+    email@domain.tld \\
+
+  % Uncomment to use
+  \and
+    Second Author Name \\
+    Department \\
+    School \\
+    email@domain.tld \\
+
+  %\and
+    %Third Author Name \\
+    %Department \\
+    %School \\
+    %email@domain.tld
+
+  %\and
+    %Fourth Author Name \\
+    %Department \\
+    %School \\
+    %email@domain.tld
+}
+
+% Date of Work
+\date{\today}
+\newcommand{\dateOfApplication}{\date{\today}}
+
+\newcommand{\keywords}{Keyword1, Keyword2, Keyword3}
+
+% Set information properties for PDF Files:
+\hypersetup{
+  pdfinfo={
+    Author={First Author Name and Second Author Name},
+    Title={DEFINE Title in documents\_informations.tex},
+    Subject={Something},
+    Keywords={Keyword1, Keyword2, Keyword3}
+  }
+}
+
+\newcommand{\examinerOne}{
+  First Examiner Name \\
+  Department \\
+  School
+}
+
+\newcommand{\examinerTwo}{
+  Second Examiner Name \\
+  Department \\
+  School
+}
+
+\newcommand{\typeOfThesis}{Bachelorthesis}
+% Faculty of application
+\newcommand{\faculty}{Communication and Environment}
+% Name of study program/course
+\newcommand{\studyprogram}{Communication and Information Engineering}
+% Town of application
+\newcommand{\town}{Kamp-Lintfort}

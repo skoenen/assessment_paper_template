@@ -1,0 +1,83 @@
+%\documentclass[oneside,12pt,a4paper,openright]{scrreprt}
+\documentclass[oneside,11pt,a4paper,openright,twocolumn]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+
+% Links in table of contents (toc) to corresponding sections
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  linktoc=all, % includes \section and \subsection int toc
+}
+
+\usepackage[german,english]{babel}
+
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
+
+% Additional Packages
+\usepackage{acronym}      % Make sure acronyms are spelled out full the firstime use
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{rotating}     % Allows rotation of Floating environments
+\usepackage{pdfpages}     % Simpler inclusion of other PDF documents
+\usepackage{caption}      % Provide capabilities to customize captions
+\usepackage{subcaption}   % Does the same as caption for 'subfigures'
+\usepackage{booktabs}     % Improving Tables for Publication documents
+\usepackage[export]{adjustbox}
+\usepackage{siunitx}
+\usepackage{makeidx}
+\usepackage{gensymb}      % Generic Symbols
+\usepackage[sort]{natbib} % For bibliography
+
+\usepackage{multirow}             % Multi Row spanning cells in a column
+\renewcommand{\arraystretch}{1.5} % More line space in tables
+\setlength{\doublerulesep}{0.2mm} % spacing between the lines of a double line
+\usepackage{tabu}                 % more advanced tabular environment
+
+% Set geometry of pages:
+\usepackage[left=2.0cm,right=2.0cm,top=3.0cm,bottom=3.0cm]{geometry}
+
+% Rename some sections
+%% Table of Contents:
+\renewcaptionname{english}{\contentsname}{\textbf{Contents}}
+\renewcaptionname{german}{\contentsname}{\textbf{Inhalt}}
+
+%% Sources aka References
+\renewcaptionname{english}{\bibname}{\textbf{References}}
+
+% Fonts
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set TOC style
+% Now considered deprecated !!!
+%\usepackage[
+  %tocindentmanual,
+  %tocflat,
+  %tocbreakstrict,
+  %toctextentriesleft,
+%]{tocstyle}
+
+% Heading
+%\usepackage{scrpage2}
+%\pagestyle{scrheadings}
+%\ohead[\sffamily \bfseries \upshape \headmark]{\sffamily \bfseries \upshape \headmark}
+%\chead[]{}
+%\ihead[]{}
+%\ofoot[\sffamily \pagemark]{\sffamily \pagemark}
+%\ifoot[]{}
+%\cfoot[]{}
+%\automark[]{chapter}
+%\renewcommand*{\chapterheadendvskip}{\vspace*{1\baselineskip}}
+
+\usepackage{lipsum}
+
+% Include file that contains informations about author and other stuff.
+\input{document_informations}
+

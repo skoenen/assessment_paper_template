@@ -1,0 +1,24 @@
+\include{template/template}
+
+\begin{document}
+  \pagenumbering{gobble}
+  \input{declaration-of-work}
+  \clearpage
+
+  \pagenumbering{arabic}
+  \input{template/article_titlepage}
+
+  \input{abstract}
+
+  \input{introduction}
+  \input{state-of-art}
+
+  \input{results}
+  \input{discussion}
+  \input{conclusion}
+  \input{future-work}
+
+  \clearpage
+  \pagenumbering{Roman}
+  \input{appendix}
+\end{document}
