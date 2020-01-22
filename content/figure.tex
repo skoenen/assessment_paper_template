@@ -1,0 +1,55 @@
+\section{Figures \& Codes}
+\label{sec:fig}
+
+\begin{figure}[thb]
+\centering
+
+\stackunder{\includegraphics[width=50mm,scale=0.5]{Figures/latex}}%
+{\scriptsize%
+            Source: \url{http://KeepCalmAndPosters.com/}}
+\caption{Latex}
+\label{fig:learnLatex}
+\end{figure}
+From the picture above \ref{fig:learnLatex} we have decided to learn latex and be COOL!
+
+In order to add specific code in latex we have two ways of achieving it. The following code is written in latex but interpreted as python code,
+\lstset{style=mystyle} 
+Here is some Python code:
+\begin{lstlisting}[language=Python, caption= Python Example Code]
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+\end{lstlisting}
+In this example the package xcolor used in the \textbf{main.tex} is imported and then the command \textbf{definecolor{}{}{}} is used to define new colours in rgb format that will later be used. 
+
+There are essentially two commands that generate the style for this example:
+
+\textbf{lstdefinestyle{mystyle}{...}}
+Defines a new code listing style called "\textit{mystyle}". Inside the second pair of braces the options that define this style are passed.
+
+The second method to display the python code without writing the code is by importing the python file. 
+
+\lstinputlisting[language=Python]{PrimeNumber.py}
+
+\clearpage
+
+\lipsum[1-2]
+
+
+%\begin{multicols}{2}
+\begin{figure}[thb]
+\centering
+
+\stackunder{\includegraphics[width=0.4\textwidth]{Figures/latex}}%
+{\scriptsize%
+            Source: \url{http://KeepCalmAndPosters.com/}}
+\caption{Latex}
+\label{fig:learnLatexCompleteSize}
+\end{figure}
+%\end{multicols}
+
+\lipsum[2-6]

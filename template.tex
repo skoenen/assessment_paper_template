@@ -15,12 +15,17 @@
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 
+\usepackage{url} %The command \url is a form of verbatim command that allows linebreaks at certain characters or combinations of characters, accepts reconfiguration, and can usually be used in the argument to another command
+\usepackage{stackengine} %The package provides a versatile way to stack objects vertically in a variety of customizable ways.
+
 % Additional Packages
 \usepackage{acronym}      % Make sure acronyms are spelled out full the firstime use
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx}
+\usepackage{graphicx} 		% The package builds upon the graphics package,
+											% providing a key-value interface for optional 
+											%arguments to the \includegraphics command
 \usepackage{xcolor}
 \usepackage{longtable}
 \usepackage{listings}
@@ -34,6 +39,7 @@
 \usepackage{makeidx}
 \usepackage{gensymb}      % Generic Symbols
 \usepackage[sort]{natbib} % For bibliography
+\usepackage{multicol}
 
 \usepackage{multirow}             % Multi Row spanning cells in a column
 \renewcommand{\arraystretch}{1.5} % More line space in tables
@@ -81,3 +87,26 @@
 % Include file that contains informations about author and other stuff.
 \input{document_informations}
 
+% Code Styling
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
