@@ -11,6 +11,7 @@ prepare: prepare-tex prepare-bib prepare-make
 
 prepare-tex: $(TEX)
 	cp content/*.tex ..
+	cp content/*.py ..
 
 prepare-bib: $(BIB)
 	cp content/*.bib ..
