@@ -1,25 +1,23 @@
 \title{DEFINE Title in documents\_informations.tex}
 
 % Author(s)
+% Be aware: between lines, an additional whitespace line is not allowed.
 \author{
     First Author Name \\
     Department \\
     School \\
     email@domain.tld \\
-
   % Uncomment to use
   \and
     Second Author Name \\
     Department \\
     School \\
     email@domain.tld \\
-
   %\and
     %Third Author Name \\
     %Department \\
     %School \\
     %email@domain.tld
-
   %\and
     %Fourth Author Name \\
     %Department \\
@@ -36,7 +34,8 @@
 % Set information properties for PDF Files:
 \hypersetup{
   pdfinfo={
-    Author={First Author Name and Second Author Name},
+    %Author={First Author Name and Second Author Name},
+    Author={\author},
     Title={DEFINE Title in documents\_informations.tex},
     Subject={Something},
     Keywords={Keyword1, Keyword2, Keyword3}
