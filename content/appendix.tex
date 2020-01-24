@@ -1,10 +1,17 @@
+% Switch from two column text to onecolumn
 \onecolumn
 
 \section*{Appendix}
 \label{appendix}
 
-
 \bibliographystyle{apalike}
 \bibliography{bibdb}
 
+% Force inclusion of all entries of `bibdb.bib`
 \nocite{*}
+
+\subsection*{Acronyms}
+
+\input{acronyms}
+\printglossaries
+
