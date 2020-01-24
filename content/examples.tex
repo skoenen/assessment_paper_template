@@ -2,10 +2,12 @@
 
 You can achieve this with
 
-\begin{lstlisting}[language=Latex,%
+% Set style for all upcoming listings
+\lstset{style=mystyle} 
+
+\begin{lstlisting}[language=TeX,%
   caption={Example of a section command without numbering},%
-  label=lst:latex_section_no_number,%
-  style=mystyle]
+  label=lst:latex_section_no_number]
   \section*{A section without number}
 \end{lstlisting}
   
@@ -36,7 +38,6 @@ The following code is written in latex but interpreted as python code,
 
 Here is some Python code:
 
-\lstset{style=mystyle} 
 \begin{lstlisting}[language=Python, caption= Python Example Code]
   num = float(input("Enter a number: "))
   if num > 0:
