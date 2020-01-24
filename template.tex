@@ -10,22 +10,35 @@
   linktoc=all, % includes \section and \subsection int toc
 }
 
+% Activate language rules for german and english
+% (hyphenation, ...)
 \usepackage[german,english]{babel}
 
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 
-\usepackage{url} %The command \url is a form of verbatim command that allows linebreaks at certain characters or combinations of characters, accepts reconfiguration, and can usually be used in the argument to another command
-\usepackage{stackengine} %The package provides a versatile way to stack objects vertically in a variety of customizable ways.
+% The command \url is a form of verbatim command that allows linebreaks at
+% certain characters or combinations of characters, accepts reconfiguration,
+% and can usually be used in the argument to another command
+\usepackage{url} 
+
+% The package provides a versatile way to stack objects vertically in a variety
+% of customizable ways.
+\usepackage{stackengine} 
 
 % Additional Packages
 \usepackage{acronym}      % Make sure acronyms are spelled out full the firstime use
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{graphicx} 		% The package builds upon the graphics package,
-											% providing a key-value interface for optional 
-											%arguments to the \includegraphics command
+\usepackage{graphicx}     % The package builds upon the graphics package,
+                          % providing a key-value interface for optional 
+                          %arguments to the \includegraphics command
+
+% Be able to have more colors and to use:
+% \definecolor{codegreen}{rgb}{0,0.6,0}
+% to define names for colors
 \usepackage{xcolor}
 \usepackage{longtable}
 
@@ -45,6 +58,10 @@
 \usepackage{gensymb}      % Generic Symbols
 \usepackage[sort]{natbib} % For bibliography
 \usepackage{multicol}
+
+% This package allows to have a glossary and an list of acronyms (Abbreviations)
+% independent of each other.
+\usepackage[acronym]{glossaries}
 
 \usepackage{multirow}             % Multi Row spanning cells in a column
 \renewcommand{\arraystretch}{1.5} % More line space in tables
@@ -118,3 +135,4 @@
     showtabs=false,                  
     tabsize=2
 }
+
