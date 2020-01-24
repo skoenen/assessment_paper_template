@@ -28,7 +28,12 @@
 											%arguments to the \includegraphics command
 \usepackage{xcolor}
 \usepackage{longtable}
+
+% Load package for code listings
 \usepackage{listings}
+% Load languages
+\lstloadlanguages{[LaTeX]TeX,Python,Ruby,Java}
+
 \usepackage{rotating}     % Allows rotation of Floating environments
 \usepackage{pdfpages}     % Simpler inclusion of other PDF documents
 \usepackage{caption}      % Provide capabilities to customize captions
@@ -45,6 +50,9 @@
 \renewcommand{\arraystretch}{1.5} % More line space in tables
 \setlength{\doublerulesep}{0.2mm} % spacing between the lines of a double line
 \usepackage{tabu}                 % more advanced tabular environment
+
+% Use vref
+\usepackage[german]{varioref}
 
 % Set geometry of pages:
 \usepackage[left=2.0cm,right=2.0cm,top=3.0cm,bottom=3.0cm]{geometry}
